@@ -6,6 +6,6 @@ class Dir
   end
 end
 
-Dir.glob("#{Dir.pwd}/**/*").each do |file_name|
+Dir["**/**"].each do |file_name|
   puts file_name if File.directory? file_name and Dir.empty? file_name
 end
