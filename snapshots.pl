@@ -1,6 +1,8 @@
 #!/usr/bin/perl -w
 # Usage: find . -name pom.xml | xargs cat | snapshots.pl
 
+#use re 'debugcolor'; # uncomment to see lot of debug info
+
 undef $/;
 $text = <>;
 
