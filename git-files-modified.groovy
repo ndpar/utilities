@@ -24,6 +24,6 @@ gitlog.in.eachLine { line ->
     }
 }
 result = new File('git.csv')
-changes.sort{ a, b -> a.value <=> b.value }.each { key, value ->
-    result << "${key},${value}\n"
+changes.sort{ a, b -> b.value <=> a.value }.each { key, value ->
+    result << "${value},${key}\n"
 }
